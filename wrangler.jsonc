@@ -12,6 +12,12 @@
 		"binding": "ASSETS",
 		"directory": ".open-next/assets"
 	},
+	"d1_databases": [
+		{
+			"binding": "membershipdetails",
+			"database_name": "membershipdetails"
+		}
+	],
 	"observability": {
 		"enabled": true
 	},
