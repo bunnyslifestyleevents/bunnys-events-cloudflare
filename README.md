@@ -44,6 +44,20 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Authentication (local demo)
+
+A minimal local authentication system has been added with endpoints at `/api/auth/signup`, `/api/auth/login`, and `/api/auth/me`. It stores users in `src/data/users.json` and signs JWTs using the `JWT_SECRET` environment variable (defaults to `dev-secret` for local dev).
+
+Install the new dependencies and set a secret before running in production:
+
+```bash
+npm install
+export JWT_SECRET="your-production-secret"
+```
+
+Note: This implementation is a simple demo and not suitable for production as-is. Use a proper user database and secure cookie handling for production deployments.
+
+
 ## Deploying To Production
 
 | Command                           | Action                                       |
